@@ -287,7 +287,7 @@ end
 
 local function unauthenticated_menu()
     while not session_id do
-        local selected=gg.choice({"<font color='#00FF00'> Login</font>","<font color='#00FF00'> Register</font>","<font color='#00FF00'> Exit script</font>"},nil,'CPM WEB TOOL  ·  BACKEND ONLINE')
+        local selected=gg.choice({"<font color='#00FF00'> Login</font>","<font color='#00FF00'> Register</font>","<font color='#00FF00'> Exit script</font>"},nil,'CPM WEB TOOL  ·  SEC ASADA')
         if not selected then return false end
         if selected==1 then
             local ok,err=pcall(login)
